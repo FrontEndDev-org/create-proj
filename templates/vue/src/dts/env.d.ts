@@ -1,11 +1,8 @@
 /**
  * @file env.d.ts
  * @ref https://nodejs.org/api/process.html#processenv
- */
-
-/// <reference types="vite/client" />
-/// <reference types="vitest/globals" />
-/// <reference types="unplugin-vue-router/client" />
+ * @ref https://vitejs.dev/guide/env-and-mode.html#intellisense-for-typescript
+*/
 
 namespace NodeJS {
   interface ProcessEnv {
@@ -13,3 +10,10 @@ namespace NodeJS {
   }
 }
 
+interface ImportMetaEnv {
+  readonly VITE_API_URL: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}

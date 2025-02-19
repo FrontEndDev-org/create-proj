@@ -19,7 +19,14 @@
     "forceConsistentCasingInFileNames": true,
 
     "lib": ["ES2023", "DOM"],
-    "types": ["node"],
+    "types": [
+      "node",
+      // vite
+      "vite/client",
+      "vitest/globals",
+      // vue
+      "unplugin-vue-router/client"
+    ],
     "plugins": [],
     "paths": {
       "@/*": ["./src/*"]
