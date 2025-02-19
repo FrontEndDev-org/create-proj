@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.0](https://github.com/FrontEndDev-org/create-proj/compare/v1.7.0...v1.8.0) (2025-02-19)
+
+
+### Features
+
+* **react:** 调整 TypeScript 配置和环境变量定义 ([af64c81](https://github.com/FrontEndDev-org/create-proj/commit/af64c814ab9d6644f3205b76ff6133669f9d7547))
+* **vue:** 合并类型定义并优化 TypeScript 配置 ([a5a65d3](https://github.com/FrontEndDev-org/create-proj/commit/a5a65d308a833ae431cca7ecb2e07051993e64f4))
+
 ## [1.7.0](https://github.com/FrontEndDev-org/create-proj/compare/v1.6.0...v1.7.0) (2025-02-08)
 
 
