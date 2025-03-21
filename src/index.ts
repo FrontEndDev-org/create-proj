@@ -13,27 +13,23 @@ import {
 } from 'create-creator';
 import { pkgDescription, pkgName, pkgVersion } from './const';
 
-const templates = {
-  react: {
-    label: 'React',
-    hint: 'React-Router(File-based Routing) + Vite + Unocss + Valtio',
-  },
-  vue: {
-    label: 'Vue3',
-    hint: 'Vue-Router(File-based Routing) + Vite + UnoCSS + Pinia',
-  },
-};
-
 export async function createCLI() {
   const creator = new Creator({
     projectPath: process.argv[2],
     templatesRoot: path.join(__dirname, '../templates'),
     toTemplateOptions(context) {
-      return context.templateNames.map((name) => ({
-        value: name,
-        label: templates[name as keyof typeof templates]?.label,
-        hint: templates[name as keyof typeof templates]?.hint,
-      }));
+      return [
+        {
+          value: 'react',
+          label: 'React',
+          hint: 'React-Router(File-based Routing) + Vite + Unocss + Valtio',
+        },
+        {
+          value: 'vue',
+          label: 'Vue3',
+          hint: 'Vue-Router(File-based Routing) + Vite + UnoCSS + Pinia',
+        },
+      ];
     },
     async extendData() {
       const nodeVersion = await selectNodeVersion();
