@@ -23,9 +23,9 @@
  * - [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)
  */
 
-import axios from "../tools/axios.ts";
-import { type AxiosRequestConfig as AxiosRequestConfig } from "../tools/axios.ts";
-import { type AxiosResponse as AxiosResponse } from "../tools/axios.ts";
+import axios from "../tools/axios.js";
+import { type AxiosRequestConfig as AxiosRequestConfig } from "../tools/axios.js";
+import { type AxiosResponse as AxiosResponse } from "../tools/axios.js";
 
 // helpers --- start
 type OneOf<T extends unknown[]> = T extends [infer A, ...infer B]
