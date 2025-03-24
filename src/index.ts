@@ -20,12 +20,12 @@ export async function createCLI() {
     toTemplateOptions(context) {
       return [
         {
-          value: 'react',
+          value: 'react-app',
           label: 'React',
           hint: 'React-Router(File-based Routing) + Vite + Unocss + Valtio',
         },
         {
-          value: 'vue',
+          value: 'vue3-app',
           label: 'Vue3',
           hint: 'Vue-Router(File-based Routing) + Vite + UnoCSS + Pinia',
         },
