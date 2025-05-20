@@ -1,0 +1,27 @@
+/**
+ * lint-staged.config.mjs
+ * @ref https://www.npmjs.com/package/lint-staged
+ */
+export default {
+  <%_ if (codeLinter === 'biome') { _%>
+  '*': [
+    'biome check --write --no-errors-on-unmatched --files-ignore-unknown=true'
+  ],
+  <%_ } else if (codeLinter === 'eslint') { _%>
+  '*.{js,mjs,cjs,ts,mts,jsx,tsx}': [
+    'prettier --write',
+    'eslint --no-error-on-unmatched-pattern --no-warn-ignored --fix',
+  ],
+
+  '*.vue': [
+    'prettier --write',
+    'stylelint --fix --allow-empty-input',
+    'eslint --no-error-on-unmatched-pattern --no-warn-ignored --fix',
+  ],
+  <%_ } _%>
+
+  '*.{css,scss}': [
+    'prettier --write',
+    'stylelint --fix --allow-empty-input',
+  ],
+};
