@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.9.0](https://github.com/FrontEndDev-org/create-proj/compare/v1.8.0...v1.9.0) (2025-05-20)
+
+
+### Features
+
+* **react-app:** 替换 lefthook 为 husky ([74f37c1](https://github.com/FrontEndDev-org/create-proj/commit/74f37c151476967e57e96585df8b05dc0c0670d9))
+* **react-deps:** 更新依赖版本 ([11ddbab](https://github.com/FrontEndDev-org/create-proj/commit/11ddbab82081952da7dc2bbf7615155874c4b6ff))
+* **vue-deps:** 更新项目依赖版本 ([ba5c836](https://github.com/FrontEndDev-org/create-proj/commit/ba5c83630ea8df20e597202324e9d1212ce25a82))
+* **vue3-app:** 替换 lefthook 为 husky ([5d6d857](https://github.com/FrontEndDev-org/create-proj/commit/5d6d8570248e1ee6d06dda908a2ce43adab78865))
+* 移除 Vue 项目中不必要的 React 类型依赖 ([ae258ed](https://github.com/FrontEndDev-org/create-proj/commit/ae258ed06f2963f04b907c96c360cfeeabd85137))
+
 ## [1.8.0](https://github.com/FrontEndDev-org/create-proj/compare/v1.7.0...v1.8.0) (2025-02-19)
 
 
