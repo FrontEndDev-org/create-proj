@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A new Vue App - <%= ctx.projectName %>",
   "scripts": {
-    "prepare": "lefthook install",
+    "prepare": "node .husky/prepare.mjs",
     "openapi-axios": "openapi-axios",
     <%_ if (codeLinter === 'biome') { _%>
     "lint": "biome check && vue-tsc --noEmit && stylelint '**/*.{css,scss}'",
@@ -46,7 +46,8 @@
     "@types/node": "<%= nodeVersion %>",
     "commit-and-tag-version": "^12.5.0",
     "cross-env": "^7.0.3",
-    "lefthook": "^1.10.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.0.0",
     "openapi-axios": "^0.34.0",
     "postcss": "^8.5.1",
     "sass-embedded": "^1.83.4",
