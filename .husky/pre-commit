@@ -1,0 +1,11 @@
+# pre-commit
+
+echo "node version = $(node -v)"
+echo "npm version = $(npm -v)"
+
+# https://github.com/lint-staged/lint-staged?tab=readme-ov-file#command-line-flags
+npx lint-staged --allow-empty
+
+# https://typicode.github.io/husky/get-started.html#scripting
+git update-index --again
+
